@@ -18,7 +18,8 @@
 		A50C264A16BCC5A000A31C03 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A50C264916BCC5A000A31C03 /* Default-568h@2x.png */; };
 		A50C264D16BCC5A000A31C03 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50C264B16BCC5A000A31C03 /* MainStoryboard.storyboard */; };
 		A50C265016BCC5A000A31C03 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C264F16BCC5A000A31C03 /* MasterViewController.m */; };
-		A50C265316BCC5A000A31C03 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C265216BCC5A000A31C03 /* DetailViewController.m */; };
+		A50C265C16BCC99B00A31C03 /* ReferenceCycleARCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C265B16BCC99B00A31C03 /* ReferenceCycleARCViewController.m */; };
+		A50C266016BCCAEE00A31C03 /* ClockUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C265F16BCCAEE00A31C03 /* ClockUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,10 @@
 		A50C264C16BCC5A000A31C03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A50C264E16BCC5A000A31C03 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		A50C264F16BCC5A000A31C03 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		A50C265116BCC5A000A31C03 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		A50C265216BCC5A000A31C03 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A50C265A16BCC99B00A31C03 /* ReferenceCycleARCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReferenceCycleARCViewController.h; path = ViewController/ReferenceCycleARCViewController.h; sourceTree = "<group>"; };
+		A50C265B16BCC99B00A31C03 /* ReferenceCycleARCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReferenceCycleARCViewController.m; path = ViewController/ReferenceCycleARCViewController.m; sourceTree = "<group>"; };
+		A50C265E16BCCAEE00A31C03 /* ClockUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockUtility.h; path = Model/ClockUtility.h; sourceTree = "<group>"; };
+		A50C265F16BCCAEE00A31C03 /* ClockUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockUtility.m; path = Model/ClockUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,13 +89,13 @@
 		A50C263916BCC5A000A31C03 /* ReferenceCyclesSample */ = {
 			isa = PBXGroup;
 			children = (
+				A50C265D16BCCAB900A31C03 /* Model */,
+				A50C265916BCC82700A31C03 /* ViewController */,
 				A50C264216BCC5A000A31C03 /* AppDelegate.h */,
 				A50C264316BCC5A000A31C03 /* AppDelegate.m */,
 				A50C264B16BCC5A000A31C03 /* MainStoryboard.storyboard */,
 				A50C264E16BCC5A000A31C03 /* MasterViewController.h */,
 				A50C264F16BCC5A000A31C03 /* MasterViewController.m */,
-				A50C265116BCC5A000A31C03 /* DetailViewController.h */,
-				A50C265216BCC5A000A31C03 /* DetailViewController.m */,
 				A50C263A16BCC5A000A31C03 /* Supporting Files */,
 			);
 			path = ReferenceCyclesSample;
@@ -110,6 +113,24 @@
 				A50C264916BCC5A000A31C03 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A50C265916BCC82700A31C03 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A50C265A16BCC99B00A31C03 /* ReferenceCycleARCViewController.h */,
+				A50C265B16BCC99B00A31C03 /* ReferenceCycleARCViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A50C265D16BCCAB900A31C03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A50C265E16BCCAEE00A31C03 /* ClockUtility.h */,
+				A50C265F16BCCAEE00A31C03 /* ClockUtility.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +202,8 @@
 				A50C264016BCC5A000A31C03 /* main.m in Sources */,
 				A50C264416BCC5A000A31C03 /* AppDelegate.m in Sources */,
 				A50C265016BCC5A000A31C03 /* MasterViewController.m in Sources */,
-				A50C265316BCC5A000A31C03 /* DetailViewController.m in Sources */,
+				A50C265C16BCC99B00A31C03 /* ReferenceCycleARCViewController.m in Sources */,
+				A50C266016BCCAEE00A31C03 /* ClockUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +328,7 @@
 				A50C265816BCC5A000A31C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
