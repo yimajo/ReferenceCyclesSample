@@ -34,11 +34,13 @@
 {
     [super viewDidLoad];
 	
-	//循環参照するパターン
-//	[self sup];
-	
-	//循環参照しないパターン
-	[self supNoReferenceCycle];
+    if (ReferenceTypeWeak == self.referenceType) {
+        //循環参照しないパターン
+        [self supNoReferenceCycle];
+    } else {
+        //循環参照するパターン
+        [self sup];        
+    }
 }
 
 - (void)sup

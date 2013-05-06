@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    ReferenceTypeWeak,
+    ReferenceTypeStrong,
+} ReferenceType;
+
 @interface ReferenceCycleARCViewController : UIViewController
+
+@property (assign, nonatomic) ReferenceType referenceType;
 
 @end

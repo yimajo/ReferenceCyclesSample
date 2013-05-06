@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "ReferenceCycleARCViewController.h"
 
 @implementation MasterViewController
 
@@ -24,6 +25,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"WeakSegueIdentifier"]) {
+        
+        ((ReferenceCycleARCViewController *)segue.destinationViewController).referenceType = ReferenceTypeWeak;
+        
+    } else {
+
+        ((ReferenceCycleARCViewController *)segue.destinationViewController).referenceType = ReferenceTypeStrong;
+        
+    }
 }
 
 @end
