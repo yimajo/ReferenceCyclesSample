@@ -10,7 +10,7 @@
 
 @interface ClockUtility : NSObject
 
-@property (assign, nonatomic) NSTimer *tickTimer;
+@property (weak, nonatomic) NSTimer *tickTimer;
 
 - (void)tick:(void(^)(NSUInteger counter))tick;
 
