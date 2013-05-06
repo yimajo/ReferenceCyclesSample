@@ -21,6 +21,7 @@
 
 - (void)dealloc
 {
+    [self.clockUtility.tickTimer invalidate];
 	[[[UIAlertView alloc] initWithTitle:nil
 								message:[NSString stringWithFormat:@"循環参照せずdeallocできた %@", self.class]
 							  delegate:nil
