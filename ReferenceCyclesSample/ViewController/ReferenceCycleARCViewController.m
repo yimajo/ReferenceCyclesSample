@@ -35,10 +35,10 @@
     [super viewDidLoad];
 	
 	//循環参照するパターン
-	[self sup];
+//	[self sup];
 	
 	//循環参照しないパターン
-//	[self supNoReferenceCycle];
+	[self supNoReferenceCycle];
 }
 
 - (void)sup
